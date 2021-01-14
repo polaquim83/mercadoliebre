@@ -1,5 +1,5 @@
 {
-  "name": "Intro-HTML",
+  "name": "mercadoliebre",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -8,5 +8,11 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+"dependencies": {
+  "express": "^4.17.1"
+},
+"devDependencies": {
+  "nodemon": "^2.0.7"
+}
 }
