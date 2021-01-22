@@ -1,0 +1,29 @@
+.create-form {
+    padding: 10px;
+}
+
+.control-form {
+    padding: 5px;
+}
+
+.control-label {
+    font-size: 15px;
+    margin-bottom: 2px;
+    width: 50%;
+    display: block;
+    text-transform: uppercase;
+}
+
+.control-text {
+    padding: 5px;
+    width: 70%;
+}
+
+.control-button{
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #39b54a;
+    color: #ebebeb;
+    font-size: 15px;
+}
