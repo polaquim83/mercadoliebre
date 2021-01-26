@@ -17,10 +17,14 @@
 <body>
     <header class="main-header">
         <div class="header-top-line">
-            <img class="logo" src="/img/logo-mercado-liebre.svg" alt="logo-mercado-liebre">
-            <div class="search-bar">
-                <input type="text" class="search-input" placeholder="Buscar productos, marcas y más"> <i class="fas fa-search"></i>
-            </div>
+            <a href="/" class="logo">
+                <img  src="/img/logo-mercado-liebre.svg" alt="logo-mercado-liebre">
+            </a>
+            <form action="#" method="get" class="search-bar">
+                <div>
+                    <input type="text" class="search-input" placeholder="Buscar productos, marcas y más"> <i class="fas fa-search"></i>
+                </div>
+            </form>
             <p class="p-cuotas">
                 <i class="fas fa-hand-holding-usd"></i>
                 Comprá en cuotas y sin tarjeta de crédito
@@ -30,12 +34,12 @@
             <ul class="left-nav">
                 <li><a href="#">Ofertas</a></li>
                 <li> <a href="#">Tiendas Oficiales</a></li>
-                <li> <a href="http://localhost:3000/crear">Vender</a></li>
+                <li> <a href="/product">Vender</a></li>
                 <li> <a href="#">Ayuda</a></li>
             </ul>
             <ul class="right-nav">
-                <li> <a href="#">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
-                <li> <a href="#">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                <li> <a href="/user">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                <li> <a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
                 <li> <a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
             </ul>
         </nav>

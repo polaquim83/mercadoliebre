@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercado Liebre</title>
 
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/newProduct.css">
+    <link rel="stylesheet" href="/css/register.css">
 
 </head>
 <body>
@@ -39,7 +40,7 @@
             </ul>
             <ul class="right-nav">
                 <li> <a href="/user">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
-                <li> <a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                <li> <a href="/login"></a>Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
                 <li> <a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
             </ul>
         </nav>
@@ -49,35 +50,71 @@
     </header>
 
     <main>
-        <form action="/create-product" method="POST" class="create-form">
+        <form action="/" method="get" class="create-form">
+            <div class="line">
+                <div class="control-form">
+                    <label class="control-label">Nombre y apellido: </label>
+                    <input type="text" name="realname" class="control-text" id="realname">
+                </div>
+                <div class="control-form">
+                    <label class="control-label">Nombre de usuari@: </label>
+                    <input type="text" name="username" class="control-text" id="username">
+                </div>
+            </div>
+            
             <div class="control-form">
-                <label class="control-label">Nombre del producto: </label>
-                <input type="text" name="nombreProducto" class="control-text">
+                <label class="control-label">Fecha de nacimiento: </label>
+                <input type="date" name="bornday" class="control-date">
             </div>
             <div class="control-form">
-                <label class="control-label">Precio </label>
-                <input type="number" name="precioProducto" placeholder="1234.56" class="control-text">
+                <label class="control-label">Domicilio: </label>
+                <input type="text" name="address" class="control-text">
             </div>
             <div class="control-form">
-                <label class="control-label">Descuento </label>
-                <input type="number" name="descuentoProducto" class="control-text">
+                <label class="control-label">¿Quieres comprar o vender productos? </label>
+                    <div>
+                        <input type="radio" name="usertype" class="control-radio" value="buyer">
+                        <label class="check-label"> Comprar </label>
+                    </div>
+                    <div>
+                        <input type="radio" name="usertype" class="control-radio" value="seller">
+                        <label class="check-label"> Vender </label>
+                    </div>
             </div>
             <div class="control-form">
-                <label class="control-label">Esta en oferta: </label>
-                <input type="radio" name="estaOferta" class="control-check">
+                <label class="control-label">Categorías de interés: </label>
+                <div></div>
+                <input type="checkbox" name="likecategory" value="electro" class="control-check">
+                    <label class="check-label"> Electro </label>
+                    <div></div>
+                        <input type="checkbox" name="likecategory" value="moda" class="control-check">
+                        <label class="check-label"> Moda </label>
+                    <div>
+                        <input type="checkbox" name="likecategory" value="hogar" class="control-check">
+                        <label class="check-label"> Hogar </label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="likecategory" value="juguetería" class="control-check">
+                        <label class="check-label"> Juguetería </label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="likecategory" value="vida sana" class="control-check">
+                        <label class="check-label"> Vida sana </label>
+                    </div>
             </div>
             <div class="control-form">
-                <label class="control-label">Categoría: </label>
-                <select name="categoria" class="control-text">
-                    <option value="hogar">Hogar</option>
-                    <option value="electro">Electro</option>
-                    <option value="indumentaria">Indumentaria</option>
-                </select>
+                <label class="control-label">Foto de usuario: </label>
+                <input type="file" name="userpicture">
             </div>
             <div class="control-form">
-                <label class="control-label">Descripcion: </label>
-                <textarea name="descripcion" class="control-text"></textarea>
+                <label class="control-label">Contraseña: </label>
+                <input type="password" name="password" class="control-text">
             </div>
+            <div class="control-form">
+                <label class="control-label">Confirmar contraseña: </label>
+                <input type="password" name="password" class="control-text">
+            </div>
+            
             <button type="submit" class="control-button">ENVIAR</button>
             <button type="reset" class="control-button">BORRAR</button>
         </form>

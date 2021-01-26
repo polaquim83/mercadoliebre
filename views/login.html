@@ -11,8 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/newProduct.css">
-
+    <link rel="stylesheet" href="/css/login.css">
 </head>
 <body>
     <header class="main-header">
@@ -49,37 +48,21 @@
     </header>
 
     <main>
-        <form action="/create-product" method="POST" class="create-form">
+        <form action="/" method="get">
             <div class="control-form">
-                <label class="control-label">Nombre del producto: </label>
-                <input type="text" name="nombreProducto" class="control-text">
+                <label class="control-label">Nombre de usuari@: </label>
+                <input type="text" name="username" class="control-text">
             </div>
             <div class="control-form">
-                <label class="control-label">Precio </label>
-                <input type="number" name="precioProducto" placeholder="1234.56" class="control-text">
+                <label class="control-label">Contraseña: </label>
+                <input type="password" name="password" class="control-text">
             </div>
             <div class="control-form">
-                <label class="control-label">Descuento </label>
-                <input type="number" name="descuentoProducto" class="control-text">
+                <input type="checkbox" name="remember" value="remember" class="control-check">
+                <label class="check-label"> Recordarme </label>
             </div>
-            <div class="control-form">
-                <label class="control-label">Esta en oferta: </label>
-                <input type="radio" name="estaOferta" class="control-check">
-            </div>
-            <div class="control-form">
-                <label class="control-label">Categoría: </label>
-                <select name="categoria" class="control-text">
-                    <option value="hogar">Hogar</option>
-                    <option value="electro">Electro</option>
-                    <option value="indumentaria">Indumentaria</option>
-                </select>
-            </div>
-            <div class="control-form">
-                <label class="control-label">Descripcion: </label>
-                <textarea name="descripcion" class="control-text"></textarea>
-            </div>
+
             <button type="submit" class="control-button">ENVIAR</button>
-            <button type="reset" class="control-button">BORRAR</button>
         </form>
     </main>
 
