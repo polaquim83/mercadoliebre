@@ -32,4 +32,8 @@
     background-color: #39b54a;
     color: #ebebeb;
     font-size: 15px;
+    transition: background-color 200ms;
+}
+.control-button:hover {
+    background-color: #0022AA
 }
