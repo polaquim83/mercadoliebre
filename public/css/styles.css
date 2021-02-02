@@ -15,7 +15,7 @@ header {
 
 .search-bar{
     position: relative;
-    max-width: 300px;
+    /* max-width: 300px; */
 
 }
 .search-input{

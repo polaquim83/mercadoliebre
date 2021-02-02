@@ -33,11 +33,11 @@
             <ul class="left-nav">
                 <li><a href="#">Ofertas</a></li>
                 <li> <a href="#">Tiendas Oficiales</a></li>
-                <li> <a href="/product">Vender</a></li>
+                <li> <a href="/newproduct">Vender</a></li>
                 <li> <a href="#">Ayuda</a></li>
             </ul>
             <ul class="right-nav">
-                <li> <a href="/user">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                <li> <a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
                 <li> <a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
                 <li> <a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
             </ul>
@@ -48,16 +48,16 @@
     </header>
 
     <main>
-        <form action="/" method="get">
+        <form action="/" method="get" class="create-form">
             <div class="control-form">
                 <label class="control-label">Nombre de usuari@: </label>
-                <input type="text" name="username" class="control-text">
+                <input type="text" name="username" class="control-text" placeholder="Nombre de usuari@">
             </div>
             <div class="control-form">
                 <label class="control-label">Contraseña: </label>
-                <input type="password" name="password" class="control-text">
+                <input type="password" name="password" class="control-text" placeholder="Contraseña">
             </div>
-            <div class="control-form">
+            <div class="control-form control-remember">
                 <input type="checkbox" name="remember" value="remember" class="control-check">
                 <label class="check-label"> Recordarme </label>
             </div>
@@ -67,28 +67,29 @@
     </main>
 
     <footer>
-        <section>
-            <div>
+        <section class="footer">
+            <div class="footer-text">
                 <i class="fas fa-credit-card"></i>
                 <h3>Pagá con tarjeta o en efectivo</h3>
-                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y
+                    siempre es seguro!</p>
             </div>
-            <div>
+            <div class="footer-text">
                 <i class="fas fa-gift"></i>
                 <h3>Envío gratis desde $ 2.500</h3>
                 <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
                     productos. Es un beneficio de Mercado Puntos.</p>
             </div>
-            <div>
+            <div class="footer-text">
                 <i class="fas fa-user-shield"></i>
                 <h3>Seguridad, de principio a fin</h3>
                 <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
                     porque estás siempre protegid@.</p>
             </div>
-            <div>
-                <p id="copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
-            </div>
         </section>
+        <div>
+            <p id="copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+        </div>
     </footer>
 
 </body>

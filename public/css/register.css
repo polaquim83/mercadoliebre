@@ -17,14 +17,19 @@
     font-size: 15px;
     margin-bottom: 2px;
     width: 50%;
+    display: none;
+}
+.control-label.visible{
+    font-size: 15px;
+    margin-bottom: 2px;
+    width: 50%;
     display: block;
 }
-
 .control-text {
     padding: 8px;
     font-size: 12px;
     width: 100%;
-    border: 1px solid #666666;
+    border: none;
     border-radius: 4px;
     color: #666666;
     width: 70%;

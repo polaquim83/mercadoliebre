@@ -1,29 +1,42 @@
 .create-form {
     padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .control-form {
     padding: 5px;
+    width: 70%;
 }
 
 .control-label {
     font-size: 15px;
     margin-bottom: 2px;
-    width: 50%;
-    display: block;
+    width: 100%;
+    display: none;
+    opacity: 1;
+    transition: all 400ms;
+    margin: 0 auto;
 }
 
 .control-text {
     padding: 8px;
     font-size: 12px;
-    width: 100%;
-    border: 1px solid #666666;
+    border: none;
     border-radius: 4px;
     color: #666666;
-    width: 70%;
+    width: 100%;
 }
 
-.control-radio {display: inline-block}
+.control-text:focus .control-label{
+    opacity: 0.8;
+}
+
+.control-remember{
+    width: 70%;
+}
 
 .control-button{
     border: none;
@@ -33,6 +46,7 @@
     color: #ebebeb;
     font-size: 15px;
     transition: background-color 200ms;
+    width: 40%;
 }
 .control-button:hover {
     background-color: #0022AA
